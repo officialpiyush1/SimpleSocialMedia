@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <com.google.android.material.imageview.ShapeableImageView xmlns:android="http://schemas.android.com/apk/res/android"
+
+        android:id="@+id/img_profile"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:scaleType="centerCrop"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:src="@drawable/image_round"
+        app:shapeAppearanceOverlay="@style/roundedImageViewRounded"
+        app:strokeColor="@color/icon_background_dark_color"
+        app:strokeWidth="2dp"
+        android:padding="5dp"/>
+</layout>
+

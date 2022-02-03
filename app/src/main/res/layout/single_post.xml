@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <data>
+        <variable
+            name="post"
+            type="com.codingbhasha.simplesocialmedia.models.post.Post" />
+
+    </data>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_marginTop="10dp"
+android:layout_margin="5dp"
+    app:cardElevation="2dp"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="25dp">
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+<androidx.appcompat.widget.AppCompatImageView
+    android:id="@+id/img_post"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:src="@drawable/post"
+    android:adjustViewBounds="true"/>
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:padding="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/img_profile"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/image_round"
+                app:shapeAppearanceOverlay="@style/roundedImageViewRounded"
+                android:padding="5dp"/>
+
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:paddingLeft="20dp"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:layout_height="match_parent">
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:text="@{post.name}"
+                    android:id="@+id/txt_name"
+                    android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"
+
+                    android:layout_height="wrap_content"/>
+                <androidx.appcompat.widget.AppCompatTextView
+
+                    android:textColor="@color/grey"
+                    android:lines="1"
+                    android:maxLines="1"
+                    android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
+                    android:layout_width="wrap_content"
+                    android:text="@{post.time}"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/msg"/>
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+            <ImageView
+                android:layout_width="30dp" android:layout_height="match_parent"
+
+                android:contentDescription="@string/back"
+                android:padding="7dp"
+                android:rotation="90"
+                android:src="@drawable/ic_dots_2_1" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</androidx.cardview.widget.CardView>
+</layout>

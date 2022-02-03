@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Simple Social Media</string>
+    <string name="back">back</string>
+    <string name="conversations">Conversation</string>
+    <string name="search_friends">Search Friend</string>
+    <string name="my_profile">My Profile</string>
+    <string name="follows">Follows</string>
+    <string name="hello">Hello,</string>
+</resources>
