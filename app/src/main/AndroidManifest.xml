@@ -15,6 +15,7 @@
         android:theme="@style/Theme.SimpleSocialMedia">
         <activity
             android:name=".views.activitys.ProfileActivity"
+            android:theme="@style/profile"
             android:exported="false" />
         <activity
             android:name=".views.activitys.ConservationActivity"
